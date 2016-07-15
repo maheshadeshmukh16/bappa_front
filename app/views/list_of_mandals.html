@@ -1,0 +1,26 @@
+{{ list_of_mandal }}
+
+
+<div class="col-lg-6 col-lg-offset-3">
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th style="text-align: center"> ID </th>
+      <th style="text-align: center"> Name </th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+    <tr ng-repeat="data in list_of_mandal">
+      <td> {{ data.id  }} </td>
+      <td ng-class="{ active: isActive('/home/Details_Of_Mandals') }"><a ui-sref="home.details"> {{ data.name }}</a> </td>
+    </tr>
+
+    </tbody>
+
+
+  </table>
+
+</div>

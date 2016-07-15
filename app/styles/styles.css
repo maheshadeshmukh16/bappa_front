@@ -1,0 +1,184 @@
+.navbar-inverse .navbar-nav >.active > a, .navbar-inverse .navbar-nav >.active > a:focus, .navbar-inverse .navbar-nav >.active > a:hover
+{
+	background-color:#007BB6;
+}
+.navbar-brand{
+	color:white;
+}
+#navbar-brand{
+	font-size:30px;
+	color:white;
+}
+.space_login{
+	height:70px;
+	text-align:center;
+}
+.btn {
+	background-color:#007BB6;
+}
+.btn-login{
+	background-color:#007BB6;
+	color:white;
+}
+.space{
+	height:30px;
+}
+
+h1{
+	margin:0;
+	padding:0;
+}
+h2 {
+  text-align: center;
+}
+
+table caption {
+	padding: .5em 0;
+}
+th{
+	background-color:#333;
+	color:white;
+	text-align:center;
+}
+td{
+	text-align:center;
+}
+
+@media screen and (max-width: 767px) {
+  table caption {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
+}
+.space{
+	height:40px;
+}
+/*commitee
+.src-image {
+  display: none;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0;
+  background-color: #284c79;
+  color: rgb(136, 172, 217);
+}
+
+.card .header-bg {
+  /* This stretches the canvas across the entire hero unit
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px #FFF solid;
+  /* This positions the canvas under the text
+  z-index: 1;
+}
+.card .avatar {
+  position: relative;
+  margin-top: 15px;
+  z-index: 100;
+}
+
+.card .avatar img {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid rgba(0,0,30,0.8);
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}*/
+html, body {
+  margin: 0;
+  padding: 0;
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-color:#BAEC7E;*/
+}
+.login_space{
+  height:70px;
+}
+ul.dash
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+ul li .board
+{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+a {
+  color: #f06d06;
+  text-decoration: none;
+}
+
+.box {
+  padding: 2em;
+  border: 1px solid #ccc;
+  display: block;
+
+  float: left;
+  margin: -1px 0 0 -1px;
+  color: black;
+  background: linear-gradient(
+          white, white 50%, #333 50%, #333
+  );
+  background-size: 100% 202%;
+  transition: all 0.2s ease;
+  animation: down-bump 0.4s ease;
+}
+
+
+@keyframes up-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 1.5em; }
+  100% { padding-top: 2em; }
+}
+@keyframes down-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 2.5em; }
+  100% { padding-top: 2em; }
+}
+#table_round{
+  background-color: white;
+  opacity:0.6;
+}
+.table{
+  margin-bottom: 0;
+}
