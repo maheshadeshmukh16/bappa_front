@@ -19,8 +19,7 @@ angular
     'ui.router',
     'ApiCallService',
     'StorageService',
-    'LocalStorageModule',
-    'IdStorage'
+    'LocalStorageModule'
    // 'ngDialog',
    // 'SAService'
   ])

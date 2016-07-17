@@ -45,16 +45,16 @@ ApiCallService.factory('apicallserviceOp', ['$http','$resource', function ($http
   };
 
 
-  apicallserviceOp.getmandaldetails = function ( ) {
+  apicallserviceOp.getmandaldetails = function ( id ) {
 
     return $http({
 
       method: 'GET',
-      url: urlBase + "/user/getmandaldetails/" ,
+      url: urlBase + "/user/getmandaldetails/" + id,
       headers:{
         'Content-Type' : 'application/x-www-form-urlencoded'
       }
-      // data: $.param(admin_credentials)
+      // data: $.param(id)
     });
   };
 

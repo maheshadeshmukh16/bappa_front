@@ -10,27 +10,29 @@
 
 
 angular.module('ganpatiWebApp')
-  .controller('mandalDetailController', function ($scope,apicallserviceOp,IdStorageOp) {
+  .controller('mandalDetailController', function ($scope,apicallserviceOp,StorageServiceOp) {
 
 
+    $scope.getmandaldetails = function ( ) {
 
-    $scope.getmandaldetails = function (data) {
+      
 
-      data.id = /id=([^&#=]*)/.exec(window.location.hash);
-      console.log(data);
+        apicallserviceOp.getmandaldetails(StorageServiceOp.getid())
 
-      apicallserviceOp.getmandaldetails(IdStorageOp.getmandalid())
+          .success(function (response) {
 
-        .success(function (response) {
+            // StorageServiceOp.getid(response.Result.id);
+            // console.log(StorageServiceOp.setid());
 
-          console.log(response);
-          $scope.details_of_mandal = response.Result;
+            $scope.details_of_mandal = response.Result;
 
-        }).
-      error(function (err) {
-        console.log(err);
+          }).
+        // console.log(data);
+        error(function (err) {
+          console.log(err);
 
-      });
-    };
-    $scope.getmandaldetails();
+        });
+      };
+      $scope.getmandaldetails();
+
   });

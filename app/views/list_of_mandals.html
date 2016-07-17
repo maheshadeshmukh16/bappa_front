@@ -10,17 +10,11 @@
       <th style="text-align: center"> Name </th>
     </tr>
     </thead>
-
     <tbody>
-
     <tr ng-repeat="data in list_of_mandal">
       <td> {{ data.id  }} </td>
-      <td ng-class="{ active: isActive('/home/Details_Of_Mandals') }"><a ui-sref="home.details"> {{ data.name }}</a> </td>
+      <td><a ui-sref="{{data.name}}" ng-click="fun( data.id )">{{ data.name }}</a></td>
     </tr>
-
     </tbody>
-
-
   </table>
-
 </div>
